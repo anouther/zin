@@ -1,0 +1,138 @@
+<html>
+  <title>Happy birthday</title>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+  name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js">
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="script.js"></script>
+
+<body>
+  <style>
+    body {
+      background-image: url("bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat; 
+      background-position: center;
+       font-family: "Sour Gummy", sans-serif;
+    }
+
+    @keyframes anim {
+      0% {
+        background-size: 100% 100%;
+      }
+
+      25% {
+        background-size: 110% 110%;
+      }
+
+      50% {
+        background-size: 122% 122%;
+      }
+
+      75% {
+        background-size: 110% 110%;
+      }
+
+      100% {
+        background-size: 100% 100%;
+      }
+    }
+  </style>
+
+  <div id="konten">
+
+    <input class='chatMenu hidden' id='offchatMenu' type='checkbox' />
+    <div class="bodyblur"></div>
+    <div class='chatBox'>
+      <div id='data' class='chatContent'>
+        <div class='chatText'>
+          <span id='text1'>Happy Birthday, Zin sayang! Hari ini adalah hari spesialmu, jadi biarkan dunia merayakan keberadaanmu yang luar biasa.</span>
+          <span id='text2'>Kamu itu bukan cuma sahabat, tapi juga keluarga yang Tuhan kasih ke aku.</span>
+          <span id='text3'>Terima kasih sudah selalu ada di saat senang, susah, bahkan saat aku butuh bahu untuk bersandar.</span>
+          <span id='text4'>Aku nggak bisa bayangin hidup ini tanpa kehadiranmu.</span>
+          <span id='text5'>Semoga tahun ini membawa banyak kebahagiaan, kesuksesan, dan cinta untukmu.</span>
+          <span id='text6'>You deserve the best, karena kamu selalu memberikan yang terbaik untuk orang-orang di sekitarmu.</span>
+          <span id='text7'>I'm so lucky to have you, bebelove.</span>
+          <span id='text8'>Terima kasih sudah jadi pendengar terbaik, pemberi saran terbaik, dan teman paling setia.</span>
+          <span id="text10">Let’s make more memories together, karena setiap momen dengan kamu selalu spesial.</span>
+          <span id="text11">Aku doakan semua mimpi-mimpimu tercapai tahun ini, karena kamu layak mendapatkan itu semua.</span>
+          <span id="text21">Jangan lupa hari ini kamu harus bahagia, no drama, no stress, just pure joy!</span>
+          <span id="text12"> Kamu adalah definisi dari sahabat sejati—yang selalu mendukung, mengerti, dan menerima aku apa adanya.</span>
+          <span id="text13">No matter how far life takes us, you’ll always have a special place in my heart.</span>
+          <span id="text14">Terima kasih karena selalu jadi pengingat kalau aku bisa melewati apa pun.</span>
+          <span id="text15">You’re not just my best friend, kamu adalah alasan aku terus percaya pada persahabatan sejati.</span>
+          <span id="text16">Aku nggak sabar buat merayakan lebih banyak ulang tahun bareng kamu.</span>
+          <span id="text17">Dunia jadi tempat yang lebih indah karena ada kamu di dalamnya.</span>
+          <span id="text18">Keep being the amazing, inspiring, and lovable person that you are.</span> 
+          <span id="text19">Happy birthday, my one and only bestie! Let’s celebrate your awesomeness today and every day!</span>
+          <span id="text20">Oh and last, semoga kamu sama si t itu bisa lebih dekat yaa, I'm rooting for you!</span>
+          <span id='text9'>tap love<label class="lovein" onclick="selesai();">&#9829;</label></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="foto">
+      <div class="image">
+        <img id="photo" src="download.gif" width="200px" height="200px" />
+      </div>
+      <span id="textlv"></span>
+    </div>
+    <div id="contTom"><a class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim</a></div>
+  </div>
+
+  <script type="text/javascript">
+    //Ucapan Terakhir
+    var a = 0, finish; finish = "Happy Birthday to my bestie Zin, the best girl i ever had in my life, my ride-or-die, and the most amazing person I know! You’ve been my constant through every high and low, and I truly don’t know what I’d do without you. Your kindness, humor, and endless support make life so much better, and I’m so lucky to have you by my side.Today is all about YOU, celebrating everything that makes you so special—and trust me, that’s a long list! I hope this year brings you all the love, happiness, and success you deserve, because you deserve the absolute best. Let’s make more crazy memories, laugh until we cry, and keep taking on the world together.Here’s to another incredible year of friendship, growth, and fun! Love you more than words can say. Happy Birthday, bestie!";
+
+    function bukaWa() {window.location = "https://t.me/KeikoAmaya"}
+
+    function play() {
+      //Link Audio Bisa Diganti
+      var audio = new Audio('BIRTHDAY.mp3');
+      audio.play();
+    }
+    const swals = Swal.mixin({
+      allowOutsideClick: false,
+    });
+    async function mulai() {
+      await swals.fire('Hello my bestie, Zin.');
+      await swals.fire("i want to tell you something ");
+      setTimeout(check, 1000); setTimeout(teks1, 1000); play();
+    }
+
+    //Mulai
+    mulai()
+  </script>
+  <script>
+    function teks1() {document.getElementById('text1').style.display = "inline-block"; document.getElementById('text1').style.opacity = "1"; setTimeout(teks2, 3000);}
+
+    function teks2() {document.getElementById('text2').style.display = "inline-block"; document.getElementById('text2').style.opacity = "1"; setTimeout(teks3, 4000); scroll()}
+    function teks3() {document.getElementById('text3').style.display = "inline-block"; document.getElementById('text3').style.opacity = "1"; setTimeout(teks4, 3000); scroll()}
+    function teks4() {document.getElementById('text4').style.display = "inline-block"; document.getElementById('text4').style.opacity = "1"; setTimeout(teks5, 5000); scroll()}
+    function teks5() {document.getElementById('text5').style.display = "inline-block"; document.getElementById('text5').style.opacity = "1"; setTimeout(teks6, 5500); scroll()}
+    function teks6() {document.getElementById('text6').style.display = "inline-block"; document.getElementById('text6').style.opacity = "1"; setTimeout(teks7, 5500); scroll()}
+    function teks7() {document.getElementById('text7').style.display = "inline-block"; document.getElementById('text7').style.opacity = "1"; setTimeout(teks8, 4000); scroll()}
+    function teks8() {document.getElementById('text8').style.display = "inline-block"; document.getElementById('text8').style.opacity = "1"; setTimeout(teks10, 5500); scroll()}
+    function teks10() {document.getElementById('text10').style.display = "inline-block"; document.getElementById('text10').style.opacity = "1"; setTimeout(teks11, 4000); scroll()}
+    function teks11() {document.getElementById('text11').style.display = "inline-block"; document.getElementById('text11').style.opacity = "1"; setTimeout(teks21, 3700); scroll()}
+    function teks12() {document.getElementById('text12').style.display = "inline-block"; document.getElementById('text12').style.opacity = "1"; setTimeout(teks13, 3800); scroll()}
+    function teks13() {document.getElementById('text13').style.display = "inline-block"; document.getElementById('text13').style.opacity = "1"; setTimeout(teks14, 5300); scroll()}
+    function teks14() {document.getElementById('text14').style.display = "inline-block"; document.getElementById('text14').style.opacity = "1"; setTimeout(teks15, 6500); scroll()}
+    function teks15() {document.getElementById('text15').style.display = "inline-block"; document.getElementById('text15').style.opacity = "1"; setTimeout(teks9, 5500); scroll()}
+    function teks16() {document.getElementById('text16').style.display = "inline-block"; document.getElementById('text16').style.opacity = "1"; setTimeout(teks17, 6000); scroll()}
+    function teks17() {document.getElementById('text17').style.display = "inline-block"; document.getElementById('text17').style.opacity = "1"; setTimeout(teks18, 5000); scroll()}
+    function teks18() {document.getElementById('text18').style.display = "inline-block"; document.getElementById('text18').style.opacity = "1"; setTimeout(teks19, 5000); scroll()}
+      function teks19() {document.getElementById('text19').style.display = "inline-block"; document.getElementById('text19').style.opacity = "1"; setTimeout(teks20, 6200); scroll()}
+    function teks20() {document.getElementById('text20').style.display = "inline-block"; document.getElementById('text20').style.opacity = "1"; setTimeout(teks9, 4000); scroll()}
+    function teks21() {document.getElementById('text21').style.display = "inline-block"; document.getElementById('text21').style.opacity = "1"; setTimeout(teks12, 4000); scroll()}
+    function teks9() {document.getElementById('text9').style.display = "inline-block"; document.getElementById('text9').style.opacity = "1"; scroll()}
+  </script>
+</body>
+
+</html>

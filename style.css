@@ -1,0 +1,47 @@
+body{background-position: center;background-repeat: no-repeat;background-size: 100% 100% 100%;/*animation:anim 9s ease infinite;*/transition:all .3s ease;font-family: 'Quicksand', sans-serif;padding: 25px}body::before{content:"\00A9  Rayya R";color:white;opacity:.1;font-size:5px;position:absolute;bottom:25px;left:calc(50vw - 13px);} a{text-decoration:none;}
+.lovein{transition:all .1s ease;}.button:hover, .lovein:hover{opacity:.5;}
+
+#konten{z-index:3;position:relative;top:-50px;transition:all 1s ease;}
+.bodyblur{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);transition:all 1s ease;opacity: 1;visibility: visible;-webkit-backdrop-filter:blur(5px); backdrop-filter:blur(5px);}
+#foto{position:relative;top:10vh;opacity:0;visibility: hidden;text-align:center;width:100%;height:250px;transition:all 3s ease;} #foto > *{display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:white} #foto img{transition:all .3s ease;} @keyframes leaves {0% {transform: scale(1);} 100% {transform: scale(.90);}} .image .degdeg{animation: leaves 2s ease-in-out infinite alternate;-webkit-animation: leaves 1s ease-in-out infinite alternate;}
+
+#contTom{position:relative;opacity:0;visibility:hidden;margin-top:100px;transition:all .5s ease;display:flex;justify-content:center;align-items:center;list-style:none}
+.icon{flex-shrink:0; display:inline-block;margin-right:12px; width:18px;height:18px; background-size:cover;background-repeat:no-repeat;background-position:center}
+.icon.whatsapp{background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23fefefe'><g><path d='M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z'/><path d='M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z'/></g></svg>")}
+.button{margin-top:12px;transition:all .2s ease;display:inline-flex;align-items:center;padding:10px 15px;outline:0;border:0; border-radius:10px;line-height:20px; color:#fefefe; background:rgba(0, 0, 0, .50); font-size:13px;white-space:nowrap;overflow:hidden;max-width:100%}
+
+:root {
+--warna-background: #327D2E; 
+--warna-bg-chat: #f0f5fb;
+--warna-icon: #fff; 
+--warna-text: #FFFFFF;
+--warna-text-alt: #E5E5E5;
+--lebar-chatbox: 320px;
+}
+
+svg{width: 22px;height: 22px;vertical-align: middle;fill: var(--warna-icon)}
+.chatMenu, .tombolChat .svg-2{display: none}
+
+.tombolChat{position: fixed;background-color: var(--warna-background);bottom: 20px;left: 20px;border-radius: 50px;z-index: 20;overflow: hidden;display:none;align-items: center;justify-content: center;width: 50px;height: 50px;-webkit-transition: all .2s ease-out;transition: all .2s ease-out}
+.tombolChat svg{margin: auto;fill: var(--warna-icon)}
+  @keyframes kont{0%  {left:20px; top:70px;} 50% {left:25px; top:72px;} 100% {left:20px; top:70px;}}
+.chatBox{animation-name:kont;animation-duration: 3s;animation-iteration-count: infinite;position: fixed;top: 70px;left: 20px;width: var(--lebar-chatbox);-webkit-transition: all .1s ease-out;transition: all .1s ease-out;opacity: 0;visibility: hidden;line-height: normal}
+.chatContent{border-radius: 15px;background-color:transparent;max-height:50vh;overflow: auto}
+.chatHead{position: relative;display: flex;align-items: center;padding: 15px 20px;background-color: var(--warna-background);overflow: hidden}
+.chatHead svg{width: 32px;height: 32px;flex-shrink: 0;fill: var(--warna-icon)}
+.chatHead img{border-radius:50%;width: 50px;height: 50px;flex-shrink: 0;}
+.chatHead .chatTitle{padding-left: 15px;font-size: 14px;color: var(--warna-icon)}
+.chatHead .chatTitle span{font-size: 11.5px;display: block;line-height: 1.58em}
+
+.chatText{display: flex;flex-wrap: wrap;margin: 25px 20px;font-size: 13px;color: var(--warna-text)}
+.chatText span{display: none;opacity:0;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;margin-top:15px;margin-right: auto;padding: 10px 20px 10px 20px;background-color:rgba(0, 0, 0, .45);border-radius: 3px 15px 15px}
+/*.chatText span:after{content: 'now';margin-left: 15px;font-size: 9px;color: var(--warna-text-alt)}*/
+.chatText .typing{font-size: 14px;margin: 15px 0 0 auto;padding: 10px 20px 10px 10px;border-radius: 15px 3px 15px 15px}
+.chatText .typing: after{display: none}
+
+.balasChat{display:none;align-items: center;margin-top: 15px;padding: 18px 20px;border-radius: 10px;background-color:rgba(0, 0, 0, .40);overflow: hidden;font-size: 12px;color: white;-webkit-transition: all .1s ease-out;transition: all .1s ease-out;}.balasChat:hover{transform: scale(.90);}
+.chatMenu:checked + .tombolChat{-webkit-transform: rotate(360deg);transform: rotate(360deg)}
+.chatMenu:checked + .tombolChat .svg-1{display: none}
+.chatMenu:checked + .tombolChat .svg-2{display: block}
+.chatMenu:checked ~ .chatBox{top: 10vh;opacity: 1;visibility: visible}
+.chatMenu:checked ~ .bodyblur{opacity:0;visibility:hidden;}
